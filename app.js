@@ -87,3 +87,13 @@ function getRandomNumber(min, max) {
 function getRandomColor() {
 	return colors[Math.floor(Math.random() * colors.length)]
 }
+
+function winTheGame() {
+	function kill() {
+		const circle = document.querySelector('.circle')
+		if (circle) {
+			circle.click()
+		}
+	}
+	setInterval(kill, 10)
+}
